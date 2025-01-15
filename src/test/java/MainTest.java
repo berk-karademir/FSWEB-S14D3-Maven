@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MainTest {
 
     Car car;
-    Mitsubishi mitsubishi;
+    Mitsubishi Mitsubishi;
     Holden holden;
     Ford ford;
     CarSkeleton carSkeleton;
@@ -37,7 +37,7 @@ public class MainTest {
     @BeforeEach
     void setUp() {
         car = new Car(4, "Mercedes");
-        mitsubishi = new Mitsubishi(4, "Mitsubishi");
+        Mitsubishi = new Mitsubishi(4, "Mitsubishi");
         holden = new Holden(4, "Holden");
         ford = new Ford(4, "Ford");
         carSkeleton = new CarSkeleton("Test", "test");
@@ -100,7 +100,7 @@ public class MainTest {
     @DisplayName("Mitsubishi, Ford, Holden doğru sınıf tipinde mi ?")
     @Test
     public void testChildClassTypes() throws NoSuchFieldException {
-        assertThat(mitsubishi, instanceOf(Car.class));
+        assertThat(Mitsubishi, instanceOf(Car.class));
         assertThat(ford, instanceOf(Ford.class));
         assertThat(holden, instanceOf(Holden.class));
     }
